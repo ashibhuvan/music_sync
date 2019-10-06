@@ -13,14 +13,14 @@ headers = {
 
 params = (
     ('fields', 'items(track(name,artists))'),
-    
+    #('limit', 2),
 )
 
 response = requests.get('https://api.spotify.com/v1/playlists/6a1lf2JSEHBR9Rax025CdG/tracks', headers=headers, params=params)
 
 data = response.json()
-print(data)
-
+for i in data['items']:
+	print (i['track']['name'])
 #first task is to list all the playlists from a user
 #second task is to list the songs from a playlist link
 
