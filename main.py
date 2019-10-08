@@ -26,3 +26,16 @@ for i in data['items']:
 
 #third task to convert playlist to youtube
 
+
+if __name__ == '__main__':
+	if len(sys.argv) > 1:
+		url = sys.argv[1]
+	else:
+		print("please enter a spotify playlist url")	
+	
+
+	
+
+
+
+
