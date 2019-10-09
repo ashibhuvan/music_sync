@@ -21,6 +21,7 @@ def main():
     api_version = "v3"
     client_secrets_file = "YOUR_CLIENT_SECRET_FILE.json"
 
+    #client_secrets_file = "AIzaSyBuPvJKvv82vETo527gdfxz058L8Vk1slY"
     # Get credentials and create an API client
     flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
         client_secrets_file, scopes)
